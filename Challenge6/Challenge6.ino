@@ -1,7 +1,7 @@
 /*********************************************
 Challenge 6:
-Explain the challenge and how you solved it:
-
+Challenges 6 and 7 are just combinations and extensions of the first 5 challenges,
+so they do not have extensions.
 
 Written by: 
 Date: 
