@@ -7,5 +7,8 @@ Remember, this is my solution; if students can get it to work using a different 
 
 ## Project background
 Robot components: https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/tree/main/Ardunio_2Wheel_Robot_Boilerplate/AIDrive_2Wheel_Robot_Components
+
 Robot assembley: https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/tree/main/Ardunio_2Wheel_Robot_Boilerplate/AI%20Driver%20Assemebley%20Instructions
 
+Robot Challenges:
+https://github.com/TempeHS/AIDriver_Challenges
