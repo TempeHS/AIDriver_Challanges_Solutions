@@ -26,8 +26,7 @@ Date: 11/3/2024
     mrJonesDriving->driveForward(50,175);
 	}
 
-/*
-Challenge notes
+/* Extension notes 
  - Drive a circle both directions.
       Swap wheel speeds
       mrJonesDriving->driveForward(75,150) 
@@ -51,5 +50,4 @@ Challenge notes
       2. Swap wheel speeds
       3. Car does a lap
       4. Don't forget to add delay for both laps
-*/
 

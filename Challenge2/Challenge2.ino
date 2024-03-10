@@ -33,14 +33,14 @@ Date: 11-3-2024
     }
 	}
 
-/* Challenge notes 
-Progressively accelerate or deaccelerate
- Students can either add a series of incling or declining speeds
- or they can use a loop before setting mRepeat to false
-  for (int i = 125; i > 0; i = i-5) {
-    mrJonesDriving->driveForward(i,i);
-    delay(150);
-  } 
+/* Extension notes 
+ - Progressively accelerate or deaccelerate
+    Students can either add a series of incling or declining speeds
+    or they can use a for loop before setting myRepeat to false
+      for (int i = 125; i > 0; i = i-5) {
+        mrJonesDriving->driveForward(i,i);
+        delay(150);
+      } 
 
 
 
