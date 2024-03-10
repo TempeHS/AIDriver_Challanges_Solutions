@@ -24,7 +24,7 @@ if (true){
   Serial.println("This is false")
 }
 
-While (true) {
+while (true) {
   mrJonesDriving->driveForward(200,200);
 }
 
