@@ -1,11 +1,12 @@
 /*********************************************
 Challenge 3:
 Explain the challenge and how you solved it:
+I drove forward for a set period, braked, then rotated right and braked again. I used the brakes as I found they
+improved the accuracy of tthey timer. I then put a set brake in the else once the 'IF' has run 4 times,
+it sets the brakes permanently. 
 
-
-Written by: 
-Date: 
-
+Written by: Ben Jones
+Date: 11/3/2024
 *********************************************/
 #include "AIDriver.h"
 
@@ -23,8 +24,12 @@ Date:
     while (myCount < 4) {
       mrJonesDriving->driveForward(130,125);
       delay(1800);
+      mrJonesDriving->brake();
+      delay(300);
       mrJonesDriving->rotateRight(200);
       delay(290);
+      mrJonesDriving->brake();
+      delay(300);
       myCount = myCount + 1;
     } 
       mrJonesDriving->brake();
