@@ -33,6 +33,5 @@ Date:
 
   /* Extension notes 
  - I can drive a triangle.
-    Change 
  - I can put the turn and forward commands in sperate functions to call on demand.
  - I can use a for loop to do the exact some challenge.
