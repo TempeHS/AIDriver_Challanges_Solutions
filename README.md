@@ -5,6 +5,8 @@ Notes for how to solve each of the extension challenges are at the bottom and ca
 
 Remember, this is my solution; if students can get it to work using a different solution, then they have produced an acceptable algorithm. There is no right or wrong way.
 
+Challenges 6 and 7 are just combinations and extensions of the first 5 challenges, so they do not have extensions.
+
 ## Project background
 Robot components: https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/tree/main/Ardunio_2Wheel_Robot_Boilerplate/AIDrive_2Wheel_Robot_Components
 
