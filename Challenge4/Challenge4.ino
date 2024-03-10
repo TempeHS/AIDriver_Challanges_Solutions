@@ -1,11 +1,13 @@
 /*********************************************
 Challenge 4:
 Explain the challenge and how you solved it:
+I called the driveForwardOneMeter function from the loop so it only runs once. The loop method is empty
+so it doesn't do anything. In the driveForwardOneMeter function, I made the car drive forward brake, turn
+to the right brake and drive forward and brake. I adjusted the delays so the distance
+and turns were accurate.
 
-
-Written by: 
-Date: 
-
+Written by: Ben Jones
+Date: 11-4-2024
 *********************************************/
   #include "AIDriver.h"
   
