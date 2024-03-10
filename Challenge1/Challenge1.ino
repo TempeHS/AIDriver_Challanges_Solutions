@@ -23,7 +23,7 @@ Date: 11/3/2024
 	}
 
 	void loop(){ // loops continuously 50 times a second
-    mrJonesDriving->driveForward(50,150);
+    mrJonesDriving->driveForward(50,175);
 	}
 
 /*

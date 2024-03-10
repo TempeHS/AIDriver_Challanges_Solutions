@@ -1,10 +1,11 @@
 /*********************************************
 Challenge 2:
-Explain the challange and how you solved it:
+Explain the challenge and how you solved it:
 In the 'if' I added the drive forward speed with a delay that I calculated to run
-as close as possible to 2m. In the 'else', I used the brake method.
-For the challenges, I added in a series of speed adjustments with short delays to bring it up to speed
-then reversed the process to slow it to a stop before applying the brake.
+as close as possible to 2m. My car pulled to the right so I made the left wheel 
+slightly faster. In the 'else', I used the brake method.
+For the challenges, I added in a series of speed adjustments with short delays to bring it up to speed,
+and then reversed the process to slow it to a stop before applying the brake.
 
 Written by: Ben Jones
 Date: 11-3-2024
@@ -23,8 +24,8 @@ Date: 11-3-2024
 	
 	void loop(){ // loops continuously 50 times a second
     if (myRepeat) {
-      mrJonesDriving->driveForward(125,125);
-      delay(3000);
+      mrJonesDriving->driveForward(130,125);
+      delay(3400);
       myRepeat = false;
     } else {
       mrJonesDriving->brake();
