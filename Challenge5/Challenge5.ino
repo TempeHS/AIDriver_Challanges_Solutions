@@ -17,7 +17,6 @@ Date:
 	}
 
 	void loop(){ // loops continuously 50 times a second
-    mrJonesDriving->read();
     if (mrJonesDriving->read() <= 100) {
       mrJonesDriving->driveForward(130,125);
     } else {
@@ -35,6 +34,5 @@ Date:
 }
 
 /* Extension notes 
- - Move the function call from the setup to the loop, first predict then test
- - Then see how few lines of code you can write to make it go up and back constantly.
- - Progressively accelerate and/or deaccelerate my robot to full speed.
+ - Add options for different reactions if object is very close or just near.
+ - Progressively accelerate and or deaccelerate my robot to full speed.
