@@ -1,6 +1,6 @@
 /*********************************************
 Challenge 71:
-Explain the challange and how you solved it:
+Explain the challenge and how you solved it:
 
 
 Written by: 
