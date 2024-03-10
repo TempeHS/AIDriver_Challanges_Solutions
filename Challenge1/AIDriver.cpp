@@ -26,7 +26,11 @@ AIDriver::AIDriver(){
 }
 
 unsigned int AIDriver::read() {
-  return timing() / 2.8 / 2;  //distance by divisor
+  unsigned int theDistance = timing() / 2.8 / 2;
+  //Serial.print("Ultrasonic sensor: ");
+  //Serial.print(theDistance);
+  //Serial.println("mm;");
+  return theDistance;  //distance by divisor
 }
 
 unsigned int AIDriver::timing() {
@@ -38,9 +42,9 @@ unsigned int AIDriver::timing() {
   delayMicroseconds(10);
   digitalWrite(trig, LOW);
   previousMicros = micros();
-  while(!digitalRead(echo) && (micros() - previousMicros) <= 20000); // wait for the echo pin HIGH or timeout
+  while(!digitalRead(echo) && (micros() - previousMicros) <= 40000); // wait for the echo pin HIGH or timeout
   previousMicros = micros();
-  while(digitalRead(echo)  && (micros() - previousMicros) <= 20000); // wait for the echo pin LOW or timeout
+  while(digitalRead(echo)  && (micros() - previousMicros) <= 40000); // wait for the echo pin LOW or timeout
   return micros() - previousMicros; // duration
 }
 
