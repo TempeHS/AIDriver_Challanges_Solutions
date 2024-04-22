@@ -17,7 +17,7 @@ Date:
 	}
 
 	void loop(){ // loops continuously 50 times a second
-    if (mrJonesDriving->read() <= 100) {
+    if (mrJonesDriving->read() >= 100) {
       mrJonesDriving->driveForward(130,125);
     } else {
       turnArround();

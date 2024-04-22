@@ -34,6 +34,7 @@ unsigned int AIDriver::read() {
 }
 
 unsigned int AIDriver::timing() {
+  delay(30);
   static uint8_t trig = 6;
   static uint8_t echo = 7;
   digitalWrite(trig, LOW);
@@ -42,10 +43,14 @@ unsigned int AIDriver::timing() {
   delayMicroseconds(10);
   digitalWrite(trig, LOW);
   previousMicros = micros();
-  while(!digitalRead(echo) && (micros() - previousMicros) <= 40000); // wait for the echo pin HIGH or timeout
+  while(!digitalRead(echo) && (micros() - previousMicros) <= 20000UL); // wait for the echo pin HIGH or timeout
   previousMicros = micros();
-  while(digitalRead(echo)  && (micros() - previousMicros) <= 40000); // wait for the echo pin LOW or timeout
-  return micros() - previousMicros; // duration
+  while(digitalRead(echo)  && (micros() - previousMicros) <= 20000UL); // wait for the echo pin LOW or timeout
+  if (micros() - previousMicros > 3000) {
+    return 0;
+  } else {
+    return micros() - previousMicros; // duration
+  }  
 }
 
 void AIDriver::brake(){
